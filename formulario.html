@@ -3,33 +3,67 @@
 <head>
 	<title>Formulário</title>
 	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+	<script src="_js/controller.js"></script>
 </head>
 
 <body>
 	<h1>Formulário</h1>
 	<a href="index.html">Início</a>
 	<form>
-		<p>Nome</p>
-		<input type="text" name="nome">
+		<p>Nome Completo</p>
+		<input type="text" name="nome" id="nome">
+		<br>
+		<p>Gênero</p>
+		<p>
+        <input type="radio" name="sex" id="Gênero"value="male"> Masculino
+        <br>
+        <p>
+        <input type="radio" name="sex"  value="female"> Feminino 
+        <br>
+        <p>
+        <input type="radio" name="sex" value="female"> Não Informar
+        <br>
+        <p>
+		<p>Data De Nascimento<p>
+	    <input type="date" name="Data" id="dtNasci">
+		<p>CPF</p>
+		<input type="CPF" name="cpf" id="cpf">
+		<br>
+		<p>Telefone</p>
+		<input type="Telefone" name="Telefone" id="telefone" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+		<br>
+		<p>CEP</p>
+		<input type="CEP" name="CEP" id="cep">
+		<br>
+		<p>Endereço</p>
+		<input type="Endereço" name="Endereço">
+		<br>
+		<p>Número</p>
+		<input type="Número" name="Número">
+		<br>
+		<p>Complemento</p>
+		<input type="Complemento" name="Complemento">
+		<br>
+		<p>Bairro</p>
+		<input type="Bairro" name="Bairro">
+		<br>
+		<p>Cidade</p>
+		<input type="Cidade" name="Cidade">
+		<br>
+		<p>Estado</p>
+		<input type="Estado" name="Estado">
+		<br>
+		<p>Ponto De Referência</p>
+		<input type="Ponto de Referência" name="Ponto de Referência">
 		<br>
 		<p>Email</p>
-		<input type="email" name="email" placeholder="email@email.com">
+		<input type="Email" name="Email" id="email">
 		<br>
-		<p>Celular</p>
-		<input type="celular" name="celular" placeholder="(43) XXXXX-XXXX">
+		<p>Senha</p>
+		<input type="Senha" name="Senha" id="senha">
 		<br>
-		<p>CPF</p>
-		<input type="cpf" name="cpf">
-		<br>
-		<p>Assunto</p>
-		<input type="assunto" name="assunto">
-		<br>
-		<p>Descrição</p>
-		<input type="descrição" name="descrição">
-		<br>
+		<p>
+	   <button class="btn btn-primary" name="cadastrar" onclick="verificar()">CADASTRAR</button>		
 	</form>
-	<button type="ENVIAR">
-		ENVIAR
-	</button>
 </body>
 </html>
